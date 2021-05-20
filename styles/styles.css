@@ -35,7 +35,6 @@ button:hover {
   color: white;
 }
 
-
 /*Navbar*/
 .menu-desktop {
   display: flex;
@@ -106,100 +105,102 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.pic {
-    width: 36px;
-    position: relative;
-    display: block;
-}
+  .pic {
+      width: 36px;
+      position: relative;
+      display: block;
+  }
 
-label {   
-    height: 30px;
-    width: 40px;
-    display: block;
-    margin: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+  label {   
+      height: 30px;
+      width: 40px;
+      display: block;
+      margin: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
 
-.inner,
-.inner::before,
-.inner::after {
-    content: '';
-    width: 40px;
-    height: 5px;
-    border-radius: 10px;
-    background-color: #333;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-}
+  .inner,
+  .inner::before,
+  .inner::after {
+      content: '';
+      width: 40px;
+      height: 5px;
+      border-radius: 10px;
+      background-color: #333;
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+  }
 
-.inner::before {
-    top: 10px;
-}
-.inner::after {
-    top: 20px;
-}
+  .inner::before {
+      top: 10px;
+  }
 
-.nav {
-    height: 0px;
-    margin-top: 30px;
-    width: 0;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%; 
+  .inner::after {
+      top: 20px;
+  }
 
-}
+  .nav {
+      height: 0px;
+      margin-top: 30px;
+      width: 0;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%; 
+  }
 
-.check {
-    display: none;
-}
+  .check {
+      display: none;
+  }
 
-.check:checked ~ .nav {
-    transform: translateX(0%);
-    height: 160px;
-    width: 100%;
-}
-.check:checked ~ label > div {
-    transform: translateY(10px) rotate(45deg);
-    transition: all 0.3s ease-in-out;
-}
-.check:checked ~ label > div::before {
-    transform: translateY(-10px) rotate(90deg);
-    transition: all 0.3s ease-in-out;
-}
-.check:checked ~ label > div::after {
-    opacity: 0;
-    transform: translateY(-20px) rotate(90deg);
-    transition: all 0.3s ease-in-out;
-}
+  .check:checked ~ .nav {
+      transform: translateX(0%);
+      height: 160px;
+      width: 100%;
+  }
 
-.nav ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+  .check:checked ~ label > div {
+      transform: translateY(10px) rotate(45deg);
+      transition: all 0.3s ease-in-out;
+  }
 
-.nav a {
-    padding: 10px;
-    width: 100%;
-    display: block;
-    background-color:#0000EC;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-family: 'IBM Plex Mono', monospace;
-}
+  .check:checked ~ label > div::before {
+      transform: translateY(-10px) rotate(90deg);
+      transition: all 0.3s ease-in-out;
+  }
 
-.nav a:hover {
-  background-color:#f3f3f3;
-  color: black;
-}
+  .check:checked ~ label > div::after {
+      opacity: 0;
+      transform: translateY(-20px) rotate(90deg);
+      transition: all 0.3s ease-in-out;
+  }
 
+  .nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .nav a {
+      padding: 10px;
+      width: 100%;
+      display: block;
+      background-color:#0000EC;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .nav a:hover {
+    background-color:#f3f3f3;
+    color: black;
+  }
 }
 
 /*title*/
@@ -246,7 +247,6 @@ label {
 .main-title button a:visited {
   color:#060A24;
 }
-
 
 @media (min-width: 451px) and (max-width:780px) {
   .container-title {
@@ -345,7 +345,7 @@ iframe {
     width: 100%;
     padding: 0 20px;
   }
- }  
+}  
 
  @media (max-width:450px) {
   .main-episode .episode h2 {
@@ -620,7 +620,6 @@ iframe {
   align-items: center;
   width: 100%;
   height: 100%;
-  
 }
 
 .main-news h2 {
