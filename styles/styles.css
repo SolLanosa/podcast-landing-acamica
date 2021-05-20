@@ -10,6 +10,10 @@
   box-sizing: content-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Utilities*/
 .layout-center {
   max-width: 1200px;
